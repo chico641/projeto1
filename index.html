@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estatísticas esportivas</title>
+    <title>Comparador</title>
     <link rel="stylesheet" href="./main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,91 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Tenor+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Credit</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre Nós</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contatos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Suporte</a>
-                    </li>                    
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="about">
-        <div class="container">
-            <img class="imagem-principal" src="./imagens/dinheiro.jpg" alt="notas de reais" />
-            <div>
-                <h2>Sobre Nós</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, et cupiditate reprehenderit accusamus in iste. Debitis in, qui quam molestiae ullam ipsam cumque libero beatae nulla ratione inventore adipisci alias.
-                </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nihil necessitatibus nisi libero, voluptate dolore eum quaerat at perspiciatis adipisci, magni sint natus non ratione facere ab itaque voluptates veritatis?
-                </p>
-                <ul class="brands-list">
-                    <li><img src="./imagens/casinha.png" /></li>
-                    <li><img src="./imagens/dinheirinho.png" /></li>
-                    <li><img src="./imagens/motinha.png" /></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-methods">
-                <div>
-                    <h3>Fale Conosco</h3>
-                    <form action="">
-                        <input type="text" placeholder="Seu Nome" required />
-                        <input type="email" placeholder="Seu email" required />
-                        <input type="tel" placeholder="Seu tel (opicional)" />
-                        <textarea placeholder="Sua Mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" title="Siga-nos no Instagram">
-                                <img src="./imagens/instagram.png" alt="Logo Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no Facebook"></a>
-                            <img src="./imagens/facebook.png" alt="Logo Facebook">
-                        </li>
-                        <li>
-                            <a href="#" title="Visite Nosso Canal no Youtube"></a>
-                            <img src="./imagens/youtube.png" alt="Logo Youtube">
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua Chico Lopes, N° 10, São Paulo - SP
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>
-                &copy; Credit - Todos os direitos reservados - 2024
-            </p>
-        </div>
-    </footer>
+<header>
+    <h1>Comparador de valores</h1>
+</header>
+<body class="container">
+    <form id="meuFormulario">
+    <input id="campoa" type="number" placeholder="Campo A" required />
+    <input id="campob" type="number" placeholder="Campo B" required />
+    <button type="submit">Enviar</button>
+    </form>
+    <p class="comparacao"></p>
+    <script src="./main.js"></script>
 </body>
 </html>
